@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase of different media elements in HTML">
+
+    <title>Media</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>What do Crosswords Look Like?</h1>
+
+    <nav>
+        <ul>            
+            <li><a href="index.html">Index</a></li>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="structure.html">Structure</a></li>
+            <li><a href="deprecated.html">Deprecated</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+    </nav>
+
+    <figure>
+        <img src="/assets/cw-logo.png" alt="Crossword Logo" width="107" height="105">
+        <figcaption>Fun logo</figcaption>
+    </figure>
+
+    <embed src="/assets/crossword-svg.svg" type="image/svg+xml" width="300" height="300">
+
+    <figure>
+        <picture>
+            <source srcset="/assets/crossword-dark.png" media="(prefers-color-scheme: dark)">
+            <source srcset="/assets/crossword-filled.png" media="(max-width: 600px)">
+            <img src="/assets/crossword-empty.png" alt="Crossword grid" usemap="#xwordmap">
+        </picture>
+        <figcaption>
+            Here is a crossword grid. Make the window smaller to see it filled in. 
+            Click the image to jump around.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <figcaption>What do crosswords <em>sound</em> like??</figcaption>
+        <audio controls loop muted src="assets/cars-sound.wav"></audio>
+    </figure>
+
+    <p>(this is real trust me)</p>
+
+    <figure id="recording">
+        <figcaption>Here is a recording of me solving a crossword puzzle</figcaption>
+    
+        <video controls width="600" poster="/assets/cw-logo.png">
+            <source src="/assets/crossword-solve.mp4" type="video/mp4">
+            <track src="/assets/subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
+        </video>
+    </figure>
+
+    <figure>
+        <figcaption>Learn how to construct your own crossword!</figcaption>
+        <iframe width="560" height="315" src="https://youtube.com/embed/aAqQnXHd7qk" title="Construction Video"></iframe>
+    </figure>
+
+    <figure>
+        <figcaption>Read the clues and answers for this crossword I made!</figcaption>
+        <object data="/assets/Crossword-solution.pdf" type="application/pdf" width="600" height="400">
+            <param name="src" value="/assets/Crossword-solution.pdf"> 
+            <!-- Will cause an error in validation but was listed in requirements -->
+        </object>
+    </figure>
+
+    <p>Some unrelated shapes but that's fun too</p>
+
+    <canvas id="canvas" width="400" height="200"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50, 50, 150, 100);
+    </script>
+
+    <svg width="200" height="200" id="shapes">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        <rect x="120" y="60" width="70" height="100" stroke="red" stroke-width="6" fill="blue" />
+    </svg>
+
+    <map name="xwordmap">
+        <area shape="rect" coords="0,0,230,560" href="#shapes" alt="Link to shapes">
+        <area shape="rect" coords="230,0,560,560" href="#recording" alt="Link to recording">
+    </map>
+
+</body>
+
+</html>

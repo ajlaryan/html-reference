@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Text</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Use of all text elements in one page">
+
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <h1>Things Arman is Interested In</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="deprecated.html">Deprecated</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+
+            <p>
+                In the grand and perhaps unnecessarily ceremonious spirit of demonstration, exposition, 
+                and the gentle art of explaining things far more elaborately than the situation strictly 
+                requires, I would like to briefly introduce the modest objective of the section that 
+                follows. Despite the tone suggesting something of great scholarly ambition, this is neither 
+                a philosophical inquiry into the nature of curiosity nor an exhaustive record of personal 
+                history. Rather, the purpose is quite simple: to present a small collection of topics, 
+                hobbies, and intellectual amusements associated with an individual named Arman. These 
+                interests will serve a secondary function beyond their face value, providing convenient 
+                examples through which the structure and expressive capabilities of the HyperText Markup 
+                Language 
+                (<acronym title="Hyper Text Markup Language">HTML</acronym>)
+                may be illustrated. As headings appear where appropriate, lists emerge where 
+                enumeration proves useful, and paragraphs arrange themselves in orderly fashion beneath 
+                their respective titles, the attentive observer may notice that each element quietly 
+                demonstrates the organizational principles of semantic markup. Thus, beneath the somewhat 
+                excessive introduction you have just endured lies a straightforward intention: to explore 
+                a few of Arman's interests while simultaneously displaying a working familiarity with the 
+                practical use of HTML tags and the structured composition of web page content. -chatgpt
+            </p>
+
+            <!-- <acronym> is deprecated, <abbr> should be used instead because it covers both abbreviations and acronyms -->
+            <!-- Will cause an error in validation but was listed in requirements -->
+
+        <h2>Crosswords</h2>
+
+            <p>
+                Here I will discuss crosswords<sup>1</sup>, sometimes shortened to <abbr title="Crossword">Xword,</abbr> which 
+                is something that I have been absolutely obsessed with recently. 
+            </p>
+
+        <h3>Themes</h3>
+
+            <p>
+                Crosswords can be either themed or themeless. Themed crosswords have a few
+                words throughout them that follow a certain pattern, usually wordplay that
+                the solver will have to figure out as they complete the puzzle. This adds 
+                another layer to the crossword solving experience, as in addition to figuring
+                out the clues and filling in the grid, there is an additional puzzle within
+                the crossword.
+            </p>
+
+            <blockquote cite="https://www.nytimes.com/2018/04/11/crosswords/constructing-themes.html">
+                <p>
+                    Themes should be fresh, interesting, narrowly defined and consistently 
+                    applied throughout the puzzle. If the theme includes a particular kind 
+                    of pun, for example, then all the puns should be of that kind. Themes 
+                    and theme entries should be accessible to everyone.
+                </p>
+
+                <p>
+                     - Excerpt from
+                    <cite>
+                        <a href="https://www.nytimes.com/2018/04/11/crosswords/constructing-themes.html">
+                            How to Make a Crossword Puzzle
+                        </a>
+                    </cite>
+                    from the New York Times.
+
+                </p>
+            </blockquote>
+
+            <p>
+                Themeless crosswords, by contrast, focus purely on filling out a grid.
+                Because there is no added challenge from a theme, themeless crosswords
+                tend to be more difficult. That is, there are usually fewer words, but
+                they are longer. Rarer and more esoteric terms fill these crosswords,
+                and the clues are tougher.
+            </p>
+
+        <h4>Types of Themes</h4>
+
+            <p>
+                There are an infinite amount of themes for crosswords. However, there are a few
+                common types of themes that you will often see the more you complete crosswords.
+            </p>
+
+        <h5>Ends With...</h5>
+
+            <p>
+                One common theme is four sets of phrases that all end with a common term. These terms
+                are usually all <u>sinonims</u>, and also usually unrelated to the denotation of the theme entry.
+                These are a bit easier to understand with an example. 
+            </p>
+            
+        <h6>Example</h6>
+
+            <p>
+                Can you figure out the theme of these <data value="4">four</data> entries?
+            </p>
+
+            <ul>
+                <li><span class="ThemedEntry"><strong>PUZZLE PIECE</strong></span></li>
+                <li><span class="ThemedEntry"><strong>TENURE TRACK</strong></span></li>
+                <li><span class="ThemedEntry"><del datetime="2026-03-05">PRIME NUMBER</del></span></li>
+                <li><span class="ThemedEntry"><ins datetime="2026-03-05">CALL NUMBER</ins></span></li>
+                <li><span class="ThemedEntry"><strong>MACBOOK AIR</strong></span></li>
+            </ul>
+
+            <p>
+                Our entries are 
+                <strong>PUZZLE <em>PIECE,</em></strong>
+                <strong>TENURE <em>TRACK,</em></strong>
+                <strong>CALL <em>NUMBER,</em></strong> and
+                <strong>MACBOOK <em>AIR.</em></strong>
+                We know that a <dfn>piece</dfn> is a written, musical, or artistic creation or composition,
+                a <dfn>track</dfn> is a recording of one song or piece of music,
+                a <dfn>number</dfn> is a song, dance, piece of music, etc., especially one of several in a performance,
+                and an <dfn>air</dfn> can be defined as a tune or short melodious composition, typically a song.
+                So our theme is terms that end in synonyms for <b>song.</b> 
+            </p>
+
+            <p>
+                So piece is parsed as <s>a portion of an object</s> a song.
+                Furthermore, <strong>PUZZLE PIECE</strong> 
+                <q cite="https://www.nytimes.com/2018/04/11/crosswords/constructing-themes.html">could be reparsed <mark>(punnily)</mark> as a piece of music played while solving a puzzle.</q>
+            </p>
+
+            <p>
+                In case you were wondering, <i>song</i> in Chinese is 
+                <ruby>
+                    歌曲
+                    <rp>(</rp><rt>gē qǔ</rt><rp>)</rp>
+                </ruby> and
+
+                <ruby>
+                    歌
+                    <rp>(</rp><rt>うた</rt><rp>)</rp>
+                </ruby>
+                in Japanese. In Farsi, it is <bdi dir="rtl">آهنگ</bdi>.
+            </p>
+
+        <h5>Other Theme Types</h5>
+
+            <p>
+                There's tons of other theme types too. Sometimes you'll see words appear
+                <bdo dir="rtl">BACKWARDS</bdo>, or you'll see non-letter characters, like
+                H<sub>2</sub>O (with numbers) or multiple letters in one square. This is 
+                called a rebus, and you can input these on NYT crosswords with <kbd>esc</kbd>.
+                Rebuses allow for even longer words, so you can have things like
+                supercalifragilistic<wbr>expialidocious. Sometimes there's characters like 
+                + or - for math-themed crosswords! Try to do some calculations yourself:
+            </p>
+
+            <p>
+                <input id="a" type="number" value="3"> +
+                <input id="b" type="number" value="4">
+                =
+                <output for="a b">i dunno i'm bad at math</output>
+            </p>
+
+        <h3>Crossword Construction</h3>
+            
+            <p>
+                Making your own crossword can be super duper fun. There are all sorts of tools
+                that help with making crosswords, like word databases and regular expression 
+                searching tools. Sometimes constructors even write code to help. Here's an example:
+            </p>
+
+            <pre>
+                <code>
+from collections import Counter
+
+# put words and location here
+list = "INHEELS UNSEALS UNVEILS"
+loc = 4
+
+words = list.split()
+counts = Counter()
+
+for word in words:
+    counts[word[loc]] += 1
+
+for item, count in counts.items():
+    print(item, count)
+
+print()
+print("".join(counts.keys()))
+                </code>
+            </pre>
+
+            <p>
+                This code finds all the possible letters in a certain location for a list of words!
+                Here, <var>list</var> is all the words separated by spaces, and <var>loc</var> is the
+                position to check. The output would look something like:
+            </p>
+
+            <samp>
+                E 1 <br>
+                A 1 <br>
+                I 1 <br>
+                    <br>
+                EAI <br>
+            </samp>
+
+        <hr>
+        
+            <p>
+                <sup>1</sup> Crosswords are a form of word puzzle where letters intersect.
+            </p>
+
+            <small>
+                This discussion of crosswords was brought to you by Arman Aryan. Contact 
+                Arman at
+            </small>
+
+            <address>
+            1234 Fake Address <br>
+            Some More Fake Stuff <br>
+            </address>
+
+            <small>
+                This site was made on <time datetime="2026-03-05">March 5</time>
+            </small>
+
+    </body>
+</html>

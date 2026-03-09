@@ -1,0 +1,1 @@
+console.log(`HTML is foundation...JavaScript comes later`);

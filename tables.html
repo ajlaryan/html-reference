@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example tables in HTML">
+
+    <title>Tables</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Tables about Crosswords</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="structure.html">Structure</a></li>
+            <li><a href="deprecated.html">Deprecated</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+    </nav>
+
+    <h2>Crossword Stats by Day of Week</h2>
+
+    <table>
+        <caption>Some Crossword Clues by Difficulty</caption>
+
+        <thead>
+            <tr>
+                <th scope="col" id="answer">Answer</th>
+                <th scope="col" id="easy">Easy Clue</th>
+                <th scope="col" id="medium">Medium Clue</th>
+                <th scope="col" id="hard">Hard Clue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row" headers="answer">Strap</th>
+                <td headers="easy">Subway rider's handhold</td>
+                <td headers="medium">Part of a bike helmet</td>
+                <td headers="hard">What might keep a watch on you</td>
+            </tr>
+
+            <tr>
+                <th scope="row" headers="answer">Lamp</th>
+                <td headers="easy">Light on a night stand</td>
+                <td headers="medium">Word with sun or head</td>
+                <td headers="hard">Genie's locale</td>
+            </tr>
+
+            <tr>
+                <th scope="row" headers="answer">Old</th>
+                <td headers="easy">Aged</td>
+                <td headers="medium">Like well-known news</td>
+                <td headers="hard">Senescent</td>
+            </tr>
+
+            <tr>
+                <th scope="row" headers="answer">Idea</th>
+                <td headers="easy">What a lightbulb represents in cartoons</td>
+                <td headers="medium">"The very ____!"</td>
+                <td headers="hard">Something to think about</td>
+            </tr>
+
+            <tr>
+                <th scope="row" headers="answer">Pit</th>
+                <td headers="easy">Part discarded from a peach</td>
+                <td headers="medium">Hardest part of a date</td>
+                <td headers="hard">___ crew</td>
+            </tr>
+
+            <tr>
+                <th scope="row" headers="answer">Laws</th>
+                <td headers="easy">Statutes</td>
+                <td headers="medium">Parts of a code</td>
+                <td headers="hard">They can be passed but not failed</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <table>
+        <caption>Crossword Stats by Day of Week</caption>
+
+        <colgroup>
+            <col>
+            <col span="6" style="background-color: lightyellow;">
+            <col span="1" style="background-color: lightblue;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Stat</th>
+                <th colspan="6">Average Value by Day of Week - 15 x 15 only</th>
+                <th>21 x 21 only</th>
+            </tr>
+
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun (21 x 21)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Blocks</td>
+                <td>37.5</td>
+                <td>37.4</td>
+                <td>37.4</td>
+                <td>37.0</td>
+                <td>31.7</td>
+                <td>31.0</td>
+                <td>73.9</td>
+            </tr>
+                
+            <tr>
+                <td>Words</td>
+                <td>76.9</td>
+                <td>76.7</td>
+                <td>76.2</td>
+                <td>74.9</td>
+                <td>69.9</td>
+                <td>68.7</td>
+                <td>139.1</td>
+            </tr>
+
+            <tr>
+                <td>Flow</td>
+                <td>27.5</td>
+                <td>27.8</td>
+                <td>28.3</td>
+                <td>30.0</td>
+                <td>47.4</td>
+                <td>46.8</td>
+                <td>37.1</td>
+            </tr>
+
+            <tr>
+                <td>Open Squares</td>
+                <td>68.9</td>
+                <td>69.1</td>
+                <td>69.4</td>
+                <td>72.1</td>
+                <td>89.9</td>
+                <td>93.8</td>
+                <td>122.1</td>
+            </tr>
+
+            <tr>
+                <td>Avg Word Length</td>
+                <td>4.88</td>
+                <td>4.90</td>
+                <td>4.93</td>
+                <td>5.10</td>
+                <td>5.57</td>
+                <td>5.66</td>
+                <td>5.29</td>
+            </tr>
+
+            <tr>
+                <td>Scrabble Avg</td>
+                <td>1.58</td>
+                <td>1.59</td>
+                <td>1.60</td>
+                <td>1.58</td>
+                <td>1.56</td>
+                <td>1.57</td>
+                <td>1.56</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="8">Values are approximate averages.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+
+</html>

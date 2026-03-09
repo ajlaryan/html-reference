@@ -1,0 +1,170 @@
+<!--
+Focus of my Experiments: How badly can I write HTML so that it will still render
+Hypotheses and Findings:
+
+Experiment 1: Broken Tags
+1. Will tags still work with missing >?
+    Hypothesis: yes
+    Answer: yes
+2. Will elements still appear with missing closing tags?
+    Hypothesis: yes
+    Answer: yes
+3. What tags can be fully absent?
+    Hypothesis: I believe we saw that you can fully omit <html> <head> <title> etc and be fine
+    Answer: yup
+4. What happens with tags that don't exist?
+    Hypothesis: Will ignore them
+    Answer: That seems to be the case
+
+Experiment 2: Things Where They Shouldn't Be
+1. What happens if you put a tag that is supposed to be wrapped in another tag somewhere else? (e.g. figcaption, li)
+    Hypothesis: I think it will still appear, but not necessarily as the actual thing
+    Answer: <li> still appeared as a list item, I can't tell visually if <figcaption> did too but I think it actually did
+2. what happens if you put a tag where it shouldn't be? (e.g. button inside a button)
+    Hypothesis: I belive it will be ignored.
+    Answer: For the button inside a button, they appeared side-by-side
+3. What happens if you mess up the attributes in a tag? (e.g. attribute doesn't exist, attributes twice, typos)
+    Hypothesis: I believe they will also be ignored.
+    Answer: Yes, the attributes that don't exist and the duplicate attributes were ignored, and many typos are ignored.
+            Of course, typos in the actual attribute make it so that the attribute is then ignored.
+
+Experiment 3: Bad Values
+1. What happens when you put values that shouldn't be allowed?
+    Hypothesis: I think it will ignore the element.
+    Answer: I tested values such as negative numbers and very large numbers in the map, 
+            and the image was actually still clickable.
+
+Random Extra Stuff
+I fear I started just adding things because I was kinda having fun so my experiments are all melded together.
+But that's just like a real mad scientist experiment. Call me Frankenstein, here is my monster.
+I'm sure I could have done a lot more broken stuff, but I feel like I have to learn HTML better to break it better.
+-->
+
+<meta name="description" content="Showcase for how HTML can be written but still have elements appear">
+<link rel="stylesheet" href="styles.css"
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="structure.html">Structure</a></li>
+            <li><a href="deprecated.html">Deprecated</a></li>
+        </ul>
+    </nav>
+
+    <h3>Here is da title</h5>
+
+    <faketag>SOME MORE TEXT
+        <li> LIST ITEM</li>
+    </faketag>
+
+    <p style="" role="main" id="top">
+        HERE IS SOME TEXTTTT
+    </p>
+
+    <figure>
+        <legend>here is the legend</legend>
+        <legend><figcaption>Here is da figcaption</figcaption></legend></legen></legend></legen></legend></legen>
+        <img alt="hello"alt="hello hello"src="/assets/cw-logo.png"
+    </figure>
+
+    <p>
+        <small role="main">
+            <marquee>
+                <input type="text" type="text" autofocus>
+                <button src="/assets/cw-logo.png">BUTTON</legen></legend></legen></legend></legen></button>
+                
+            </marquee>
+            </legen></legend></legen></legend></legen>
+        </small>
+    </p>
+
+    <picture>
+        <img src="assets/crossword-filled.png" alt="waaaaaaaaa" width="200"
+    
+    <body>
+        <p>
+            AHHHHHHHHHHH
+
+            <a href="#here"
+            <button>
+                <button>
+                    AHHHH
+                </button>
+            </button>
+        </p>
+    </body>
+
+    <p>
+        <p>
+            <div>
+                <marquee href="" aldskjfaskldjf>
+                    <textarea autofocus>
+                        STUFF
+                    </textarea>
+                    <fieldset>
+                         <option value="m">Monday</option>
+                        <option value="t">Tuesday</option>
+                        <option value="w">Wednesday
+                            
+                        </option>
+                        <option value="r">Thursday</option>
+                        <option value="f">Friday</option>
+                    </fieldset>
+                </marquee>
+            </div>
+        </p>
+    </p>
+<br><br><br><br><br><br><br><br><br><br>
+
+</a>
+
+    <hr>
+
+    <font color="blue" size="3" face="Garamond"> TEXT TEXT <button>TEXT TEXGT</button><font></font>
+    <p id="here">jump here</p>
+     
+    <map name="xwordmap">
+        <area shape="rect" coords="-1, -1, 100000000,10000"   href="#top" alt="Link to shapes">
+    </map>
+
+
+</body>
+
+</font>
+<table>
+    <TD>table data</>
+        <colgroup>
+        <TD>table data <input type=password>
+        <button>aaa<button>aaa</button></td>
+            <TD>table data <img src="assets/cw-logo.png" usemap="#xwordmap"></>
+                </colgroup>
+    <tr>
+        <TD>table data</><TD>
+            
+            <input type="radio" id="themed" name="type" value="themed">
+            <marquee>
+            MOVING TEXTTTT
+
+            In
+
+            <br>
+            THA <hr>TABLE
+            
+                <marquee style="font:">MOVING TEXT IN DA MOVING TEXT
+                    <marquee>
+                        this is just fun <button> BUTTON</button>
+                    </marquee>
+                </marquee>
+            </marquee>
+                            <input type="radio" id="themed" name="type" value="themed">table data</>
+                           
+    </tr>
+</table>
+
+SOIAFJDSOKFJKLS

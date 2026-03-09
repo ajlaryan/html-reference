@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page showing correct structuring of HTML elements">
+
+    <title>Structure</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <main>
+        <h1>Structure</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="text.html">Text</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="deprecated.html">Deprecated</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+
+        <h2 id="toc">Table of Contents</h2>
+        <nav>
+            <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#process">Constructing Process</a>
+                    <ol>
+                        <li><a href="#themes">Decide Theme Entries</a></li>
+                        <li><a href="#grid">Create Grid Layout</a></li>
+                        <li><a href="#fill">Create Fill</a></li>
+                        <li><a href="#clues">Write Clues</a></li>
+                    </ol>
+                </li>
+                <li><a href="#extra">Some Extra Stuff</a></li>
+            </ol>
+        </nav>
+
+        <section>
+            <h2 id="intro">Introduction</h2>
+            <p>
+                Here I am going to talk more about crosswords because of course I am.
+                Pretend I said some more super awesome and interesting information here please.
+            </p>
+        </section>
+
+        <section>
+            <h2 id="process">Constructing Process</h2>
+            <p>
+                Here I will talk about what the crossword construction process looks like for me.
+                I will give a list of each item and maybe write a little bit about each if that ends
+                up being necessary for me to use all the things I need to use.
+            </p>
+
+            <ol>
+                <li>Decide Theme Entries</li>
+                <li>Create Grid Layout
+                    <ol>
+                        <li>Place Themed Entries</li>
+                        <li>Fill in Black Squares
+                            <ul>
+                                <li>Word Limit Requirements</li>
+                                <li>Word Length Requirements</li>
+                                <li>Symmetry Requirements</li>
+                                <li>Grid Flow</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>Create Fill
+                    <ul>
+                        <li>Word Scores</li>
+                        <li>Crossings Requirements</li>
+                    </ul>
+                </li>
+
+                <li>Write Clues</li>
+            </ol>
+
+            <h3 id="themes">Decide Theme Entries</h3>
+
+            <p>
+                A crossword's theme is the central idea that runs throughout the grid.
+                They often include some kind of wordplay or mini-puzzle that the solver
+                must figure out as they fill in the grid. Here is an article from the 
+                New York Times that explains the process of coming up with a theme.
+            </p>
+
+            <hr>
+
+            <article>
+                <header>
+
+                    <h4>How to Make a Crossword Puzzle - Themes</h4>
+
+                    <p>
+                        DEB AMLEN: Learning to solve crossword puzzles is not easy, 
+                        but learning to make them is even harder. The crossword puzzles 
+                        that solvers dig into every day are a combination of sweat, 
+                        creativity and a knowledge of the basic rules of constructing, 
+                        which is what making a puzzle is called.
+                    </p>
+
+                    <p>
+                        “How to Make a Crossword Puzzle” is a response to reader questions about 
+                        how constructors move from an idea to a completed puzzle that is ready for 
+                        submission. Follow along as pairs of published New York Times constructors pass 
+                        the creation of a crossword puzzle from hand to hand, taking us through 
+                        the process of developing a theme, designing a workable grid, filling 
+                        the entire grid and writing the clues. There are many ways to make a 
+                        puzzle, of course, but this series will highlight the basics.
+                    </p>
+
+                    <p>
+                        The New York Times looks for “intelligent, literate, entertaining and 
+                        well-crafted crosswords that appeal to the broad range of Times solvers,” 
+                        according to its crossword puzzle submission guidelines.
+                    </p>
+
+                    <p>
+                        “Themes should be fresh, interesting, narrowly defined and 
+                        consistently applied throughout the puzzle. If the theme includes 
+                        a particular kind of pun, for example, then all the puns should 
+                        be of that kind. Themes and theme entries should be accessible to everyone.”
+                    </p>
+
+                    <p>
+                        That's Mr. Tausig's and Mr. Vigeland's challenge. Let's watch them work it out.
+                    </p>
+                </header>
+
+                <hr>
+
+                <section>
+                    <p>
+                        BEN TAUSIG: Ah, themes! The heart of most daily crossword puzzles. 
+                        A great place to begin and the topic that aspiring constructors must master first.
+                    </p>
+
+                    <p>
+                        FINN VIGELAND: Creating the theme is the first thing you do for a themed puzzle. 
+                        I'm often asked which comes first, the grid or the clues, and the answer is: 
+                        the grid. In a themed puzzle, the theme anchors the grid. The theme entries also 
+                        come before the other shorter words in the grid, which are called the "fill."
+                    </p>
+
+                    <p>
+                        TAUSIG: Coming up with the theme is arguably the hardest part of creating a crossword.
+                    </p>
+
+                    <p>
+                        VIGELAND: But it's wonderful how, just when you think every theme has been done before, 
+                        new theme ideas (or at least new twists on old ones) keep coming out of the woodwork. 
+                        It's all about letting your mind wander to the right places.
+                    </p>
+
+                    <p>
+                        I think it will be most instructive to show readers how to develop a theme, rather than 
+                        tell them, so let's allow our minds to wander and see what we come up with. Any words 
+                        or phrases on your mind today that we can start with?
+                    </p>
+
+                    <h5>Keeping an Eye Out for Ideas</h5>
+
+                    <p>
+                        TAUSIG: Well, I like to brainstorm based on nothing more complex than the stuff that's 
+                        happening in my life. And since I have young kids, most of the "stuff" in my world (or 
+                        my apartment, anyway) is toys.
+                    </p>
+
+                    <p>
+                        VIGELAND: Speaking of toys and games, I was just watching the finale of "RuPaul's Drag 
+                        Race All Stars," which was won by TRIXIE MATTEL (12), and Mattel is of course a game 
+                        manufacturer. I'm not sure yet how we might draw a connection, but there is potential here!
+                    </p>
+
+                    <p>
+                        TAUSIG: Agreed — great lead for a theme. Let's take a quick aside to talk about mechanics. 
+                        Note that Finn put the name of the theme-answer-to-be, TRIXIE MATTEL, in all-caps, which is 
+                        a common convention. He also put the letter count in parentheses. That's something we'll want 
+                        to keep track of while we brainstorm.
+                    </p>
+
+                    <p>
+                        VIGELAND: Indeed, we'll need pairs of equally long theme answers so that we can obey one of 
+                        the more rigid rules of crosswords: placing your theme answers in symmetrical positions in the grid.
+                    </p>
+
+                    <p>
+                        TAUSIG: Whatever the lengths, they have to be paired to meet another rule of crossword constructing: 
+                        most themed grids are diagonally symmetrical for aesthetic reasons. The only exception is if you 
+                        have an entry running across the center, which wouldn't have a symmetrical partner. A theme entry 
+                        set with two (13)s and one (15) would still have symmetry if the (15) ran in the middle row. We'll 
+                        aim for a total theme entry letter count of about 40 letters for an easy theme like the one we're 
+                        making today.
+                    </p>
+
+                    <h5>Back to the Drawing Board</h5>
+
+                    <p>
+                        TAUSIG: TRIXIE MATTEL is a great spark, but I can already see a limitation. Namely, the 
+                        "game" aspect of our theme is in the word MATTEL. Themes have to be consistent. To make 
+                        a consistent theme from this, we would need to find at least three phrases with the name 
+                        of a game company in them. Can we find phrases with HASBRO or LEGO that have nothing to 
+                        do with the game companies themselves?
+                    </p>
+
+                    <p>
+                        VIGELAND: Good point. Unfortunately, after a quick consultation of the Wikipedia list 
+                        of game manufacturers, I see that we might be out of luck. Ben made a great point. We 
+                        want phrases that don't have to do with the actual toy companies — we lose the wordplay 
+                        aspect if LEGOLAND was a theme entry, because LEGO in there already refers to the company. 
+                        The MATTEL in TRIXIE MATTEL has nothing to do with the company, which would have made 
+                        her an excellent entry in this theme set. Alas, though, the other entries were going to be weaker.
+                    </p>
+
+                    <p>
+                        TAUSIG: Yes! And since we're going for a wordplay-based theme, this won't work for us.
+                    </p>
+
+                    <p>
+                        VIGELAND: But I like this toy and game idea. Maybe if we name a few toys, we'll find another 
+                        seed entry, one we can build on. I'm going to list shorter toys that could be part of a longer 
+                        phrase. YO-YO, DOLL, BARBIE, UNO, PUZZLE, JACKS …
+                    </p>
+
+                    <p>
+                        TAUSIG: There's a bit more to work with here: UNO PIZZERIA (11) would be good. Now we have a 
+                        phrase unrelated to toys, and yet it contains toy or game words. What's cool about that is 
+                        that the theme will become apparent only after the solver has filled in a couple of the theme 
+                        answers. This facilitates what we call an “Aha!” moment, when the solver finally sees the hidden 
+                        thread that ties the theme together.
+                    </p>
+
+                    <p>
+                        VIGELAND: I like this idea in principle, but it could run dry. After all, there are a few promising 
+                        toy words, but not a lot. More important, it feels one-dimensional to link phrases that contain 
+                        toys with no further joke. We'd want to have some sort of title or “revealer” theme entry that ties 
+                        it all together — to explain in a funny way why we grouped all these phrases together — and I 
+                        can't think of one.
+                    </p>
+
+                    <h5>Never Give Up</h5>
+
+                    <p>
+                        TAUSIG: Yes, this theme feels thin. Sadly, I suggest that we move on. But we should not be sad 
+                        about this failure! Do you know why?
+                    </p>
+
+                    <p>
+                        VIGELAND: Why?! Failure seems bad!
+                    </p>
+
+                    <p>
+                        TAUSIG: Sometimes, yes, but failure is so crucial to finding a good theme. For every great idea, 
+                        there are usually a bunch that get tossed out. You don't want to get too attached to any one concept, 
+                        because there's often a better idea around the corner.
+                    </p>
+
+                    <p>
+                        VIGELAND: Absolutely. And one of the most fun parts of brainstorming themes is seeing how far you've 
+                        come from your initial ideas. Jumping back to our toys, maybe we could make a theme around "puzzles," 
+                        since we are, after all, teaching people how to make a crossword puzzle.
+                    </p>
+
+                    <p>
+                        What are some puzzle phrases? JIGSAW PUZZLE, PUZZLE PIECE, PUZZLE COMPETITION … PUZZLE PIECE (11) 
+                        is kind of interesting, because it could be reparsed (punnily) as a piece of music played while 
+                        solving a puzzle.
+                    </p>
+
+                    <h5>Now We're Cooking</h5>
+
+                    <p>
+                        TAUSIG: I like this. If we imagine the phrase PUZZLE PIECE as describing not a game piece but a 
+                        song about crosswords, then we've got a super funny seed entry. I can imagine lots of other entries 
+                        that pair a noun in the first word with a synonym for SONG in the second word.
+                    </p>
+
+                    <p>
+                        VIGELAND: This is the same principle we had earlier when we were going down the game manufacturer 
+                        or toys route, but we have a reason for moving this theme forward: punny clues. For example, the 
+                        clue "Song for a crossword solver?" for PUZZLE PIECE reworks the original meaning of the phrase 
+                        to funny effect.
+                    </p>
+
+                    <p>
+                        TAUSIG: The key to humor in a punny crossword entry is the distance between the original sense 
+                        of the phrase and the meaning of the phrase as you clue it. A PUZZLE PIECE as a game object is 
+                        very far from the silly sense of PUZZLE PIECE as a song about crosswords. That's why it really … 
+                        sings. Sorry.
+                    </p>
+
+                    <p>
+                        VIGELAND: Some other “song” synonyms are RECORD, TRACK, NUMBER or even SONG itself, if we can 
+                        find a phrase that uses SONG with a different meaning.
+                    </p>
+
+                    <p>
+                        TAUSIG: Thanks for straight-up ignoring my dad joke in the comment above, Finn.
+                    </p>
+
+                    <p>
+                        VIGELAND: Dad jokes are so second nature to me, I don't notice them. Back to our theme! The phrase 
+                        TENURE TRACK has a funny surface sense as a song about getting job security as a professor. Plus, 
+                        it's also 11 letters long, which matches PUZZLE PIECE and thus advances our grid symmetry mission.
+                    </p>
+
+                    <p>
+                        TAUSIG: Yes! I love this, and not only because it's a song I'm hoping to sing someday. This is a 
+                        solid entry, just like PUZZLE PIECE, because the sense of "track" changes, and it does so in a 
+                        way that takes us far from the original meaning of "track." I will note, however, that the sense 
+                        of "tenure" does not change. It would be even funnier if it did, but there's no sense of "tenure" 
+                        outside of the professorial one that is common enough for us to use. Still, the entry is goofy in 
+                        all the right ways.
+                    </p>
+
+                    <h5>Use the Resources, Luke</h5>
+
+                    <p>
+                        VIGELAND: Let's go to two wonderful resources now, OneLook.com and XWordInfo.com/Finder, in order 
+                        to look up other phrases that end with the word NUMBER. I just enter "*NUMBER" in the query and a 
+                        whole lot of phrases pop up. The asterisk before NUMBER asks the database to show us all phrases 
+                        that end with NUMBER and begin with anything else. If I want only four-letter words in the first 
+                        position, I could type in "???? NUMBER." Each question mark here represents a letter — that's 
+                        the grammar of these search engines. There are even more complex searches you can do once you get 
+                        the hang of it.
+                    </p>
+
+                    <p>
+                        Among others, I got PRIME NUMBER, FAX NUMBER and WRONG NUMBER. They're all fine, but aren't 
+                        particularly funny. We have other options that amuse me more: CARDINAL NUMBER (14), BACON NUMBER (11) 
+                        and CALL NUMBER (10). A 14-letter theme entry is not ideal in a 15 by 15 grid (the black square that 
+                        would accompany it in the 15-letter-wide row limits where the entry can be placed in the grid), 
+                        and while BACON NUMBER is quite funny, the base phrase's meaning (how many degrees of separation 
+                        you are from the actor Kevin Bacon) might not be familiar to all solvers, so let's try CALL NUMBER.
+                    </p>
+
+                    <p>
+                        TAUSIG: CALL NUMBER is promising. Moreover, it allows us to do what I was talking about before — 
+                        to clue it in a way where both CALL and NUMBER change their sense. We might, for example, clue this 
+                        as "Song for when you match someone's poker bet?" That makes sense, and yet it's utterly distant 
+                        from a CALL NUMBER in a library. Q.E.D., quality joke. I also just thought about AIR as a synonym 
+                        for SONG. It's a little more obscure than the others, and stylistically specific, but it still works.
+                    </p>
+
+                    <p>
+                        VIGELAND: Any thoughts on some good AIR-ending phrases?
+                    </p>
+
+                    <p>
+                        TAUSIG: One option might be MACBOOK AIR. We'd have two options if we went that route. Either we 
+                        keep the original sense of MACBOOK, in which case it could be clued as a song about a computer, 
+                        or we turn MACBOOK into a distant silly phrase. Something like, "Song when reading a British 
+                        raincoat catalog?" What do you like, Finn?
+                    </p>
+
+                    <p>
+                        VIGELAND: That's a nice idea, and I'm definitely laughing at the idea of a "mac book" to buy 
+                        one's raincoats, but that would be inconsistent with our other themes, which don't split up the 
+                        non-song word. If you're going to split up one of the first words, you should really be doing it 
+                        to all of them.
+                    </p>
+
+                    <p>
+                        TAUSIG: Fair point. In any case, we now have a draft set:
+                    </p>
+
+                    <p>
+                        PUZZLE PIECE (11) <br>
+                        TENURE TRACK (11) <br>
+                        CALL NUMBER (10) <br>
+                        MACBOOK AIR (10) <br>
+                    </p>
+
+                    <p>
+                        This set is good! First, all of our entries are paired in length, so they can be placed 
+                        symmetrically. Additionally, the song synonyms are consistently in the second position of 
+                        two-word phrases. Because all the entries have the same structure, solvers can predict 
+                        their patterns. And best of all, they make me laugh.
+                    </p>
+
+                    <p>
+                        VIGELAND: Can't wait to see how this puzzle gets built up by the next team.
+                    </p>
+
+                    <p>
+                        TAUSIG: It's a solid foundation. Take it away, grid developers!
+                    </p>
+
+                </section>
+
+                <hr>
+
+                <footer>
+                    <p>
+                        In Part 2 of "How to Make a Crossword Puzzle," which will run May 11 on Wordplay, the Times 
+                        constructors David Steinberg and Natan Last take the theme set Mr. Tausig and Mr. Vigeland 
+                        constructed and build a grid around it.
+                    </p>
+
+                    <p>
+                        <small>
+                            Ben Tausig is editor of the American Values Club Xword, a weekly indie puzzle that's totally 
+                            your style. Ben is a professor of music when not editing or constructing. Follow him on 
+                            Twitter at @datageneral.
+                        </small>
+                    </p>
+
+                    <p>
+                        <small>
+                            Finn Vigeland is a graduate student in urban planning who lives in Somerville, Mass. His 
+                            crosswords have been featured in The New York Times, The Chronicle of Higher Education, 
+                            BuzzFeed, and Queer Qrosswords. Follow him on Twitter at @fvigeland.
+                        </small>
+
+                    </p>
+
+                    <p>
+                        <small>
+                            Deb Amlen contributed reporting. She never wanders too far from @NYTimesWordplay.
+                        </small>
+                    </p>
+
+                </footer>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <aside>
+            <p>
+                Note: I am not going to put another entire article in here. 
+                It took way too long to format that.
+                Everything else is going to be very short I fear.
+            </p>
+        </aside>
+
+        <section>
+            <h3 id="grid">Create Grid Layout</h3>
+
+            <p>
+                Let's see what steps we have left to do, but in a very weird way. Think of it like another puzzle:
+            </p>
+
+            <ol start="4" reversed>
+                <li>Write Clues</li>
+                <li>Create Fill</li>
+                <li>Create Grid Layout</li>
+                <li value="10">Solve the puzzle!</li>
+            </ol>
+
+            <p>
+                Here I will now give a description of some common crossword terminology and their definitions:
+            </p>
+
+            <dl>
+                <dt>Black Square</dt>
+                <dd>
+                    Self Explanatory--squares that break up the grid.
+                </dd>
+
+                <dt>Cheater Square</dt>
+                <dd>
+                    A black square the doesn't increase the word count. These are usually put in to make filling
+                    the grid easier, hence the name "cheater" square.
+                </dd>
+
+                <dt>Open Square</dt>
+                <dd>
+                    A grid square that does not touch any black squares (or the edge of the puzzle) horizontally or orthogonally.
+                </dd>
+
+                <dt>Grid Flow</dt>
+                <dd>
+                    A mathematical representation of how "connected" a crossword grid is.
+                </dd>
+            </dl>
+
+            <p>
+                Pretend I talk about how to fill in black squares here. Blah blah blah this is how we decide 
+                these things blah blah blah oh I'm so glad you learned something let's move on.
+            </p>
+
+        </section>
+
+        <section>
+            <h3 id="fill">Create Fill</h3>
+
+            <details>
+                <summary>What is crossword fill?</summary>
+                Fill is the term given to every word that isn't a theme word. These words "fill" in the rest of the 
+                grid.
+            </details>
+
+            <details>
+                <summary>What makes good fill?</summary>
+                Fill should be lively, "with words, phrases and names that solvers know or can infer from the crossings."
+                Constructors should emphasize lively words, well-known names and fresh phrases. Common words that lend 
+                themselves to interesting and imaginative cluing angles are encouraged.
+            </details>
+
+            <details>
+                <summary>When to use hard fill?</summary>
+                "Difficult words are fine — especially for the harder daily puzzles that run late in the week — if the words 
+                are interesting bits of knowledge or useful additions to the vocabulary. However, never let two obscure words 
+                or names cross."
+            </details>
+
+            <button id="dialogbutton">Click here for a really good tip for creating crossword fill</button>
+
+            <dialog id="tipdialog">
+                <p>
+                    Use words in English when creating a crossword, unless you are making a crossword in another language.
+                    In that case, choose words that are in that language.
+                </p>
+                <button id="closedialog">Close</button>
+            </dialog>
+
+            <script>
+                const dialog = document.getElementById("tipdialog");
+
+                document.getElementById("dialogbutton").onclick = function() {
+                    dialog.showModal();
+                };
+
+                document.getElementById("closedialog").onclick = function() {
+                    dialog.close();
+                };
+            </script>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3 id="clues">Write Clues</h3>
+
+            <p>
+                There is some more info here but it's invisible. It will tell you about writing clues.
+                It's really there trust me.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="extra">Some Extra Stuff</h2>
+
+            <p>
+                The <code>&lt;template&gt;</code> element contains HTML that is not rendered
+                when the page loads. It can be used by JavaScript to create reusable content.
+            </p>
+
+            <template id="exampletemplate">
+                <div>
+                    <p>Stuff inside the template.</p>
+                    <slot></slot>
+
+                    <!-- slot is used only in shadow DOM as a placeholder for outside content -->
+                </div>
+            </template>
+
+        </section>
+
+        <menu>
+            <li><a href="#toc">Back to top</a></li>
+            <li><a href="https://crosswithfriends.com/beta/play/100003566">Solve a crossword</a></li>
+        </menu>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example form using all form elements.">
+
+    <title>Forms & Input</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        input, textarea, select {
+            font-family: inherit;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Forms & Input</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="structure.html">Structure</a></li>
+            <li><a href="deprecated.html">Deprecated</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+    </nav>
+
+    <h2>Generate a Crossword!</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data" novalidate>
+
+        <input type="hidden" name="formVersion" value="1.0">
+
+        <label for="site-search">Search for something idk:</label>
+        <input type="search" id="site-search" name="q">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" minlength="1" maxlength="100" placeholder="Enter your name" autofocus autocomplete="given-name">
+            </div>
+
+            <div>
+                <label for="password">Type a password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="5" cols="30" maxlength="200" placeholder="Don't tell us about yourself" readonly></textarea>
+            </div>
+
+            <div>
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" pattern=".+@gmail\.com" required placeholder="email@gmail.com">
+            </div>
+
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+            </div>
+
+            <div>
+                <label for="numxwords">Nunber of crosswords completed in the last week:</label>
+                <input type="number" id="numxwords" name="numxwords" required placeholder="0">
+            </div>
+
+            <div>
+                <label for="bday">Birthday:</label>
+                <input type="date" id="bday" name="bday" value="2004-07-01" min="1900-01-01" max="2025-12-31">
+            </div>
+
+            <div>
+                <label for="timebday">Time of Birth:</label>
+                <input type="time" id="timebday" name="timebday">
+            </div>
+
+            <div>
+                <label for="today">Input today's date and time:</label>
+                <input type="datetime-local" id="today" name="today" value="2026-03-08T19:30" min="2026-03-08T00:00" max="2100-01-01T00:00">
+            </div>
+
+            <div>
+                <label for="mom">Month your mother was born in:</label>
+                <input type="month" id="mom" name="mom" min="1900-01" value="2025-12">
+            </div>
+
+            <div>
+                <label for="dad">Week your father was born in:</label>
+                <input type="week" name="dad" id="dad" min="1900-W01" max="2026-W26">
+            </div>
+
+            <div>
+                <label for="c">Favorite color</label>
+                <input type="color" id="c" name="c" value="#e66465">
+            </div>
+
+            <div>
+                <label for="f">Choose some pictures or something:</label>
+                <input type="file" id="f" name="f" accept="image/png, image/jpeg" multiple>
+            </div>
+
+            <div>
+                <label for="url">Enter a link to your favorite crossword:</label>
+                <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30">
+            </div>
+
+        </fieldset>
+
+        <div tabindex="0">
+            CROSSWORD CROSSWORD CROSSWORD
+        </div>
+
+        <fieldset>
+            <legend>Diffculty Level</legend>
+
+            <div>
+                <label for="day">Day of Week:</label>
+                <select name="day" id="day">
+                    <optgroup label="Weekday">
+                        <option value="m">Monday</option>
+                        <option value="t">Tuesday</option>
+                        <option value="w">Wednesday</option>
+                        <option value="r">Thursday</option>
+                        <option value="f">Friday</option>
+                    </optgroup>
+                    <optgroup label="Weekend">
+                        <option value="s">Saturday</option>
+                        <option value="u">Sunday</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Types of Clues</legend>
+
+            <div>
+                <label for="def">Definitions:</label>
+                <input type="checkbox" id="def" name="def" checked disabled>
+            </div>
+
+            <div>
+                <label for="fitb">Fill-in-the-blanks:</label>
+                <input type="checkbox" id="fitb" name="fitb">
+            </div>
+
+            <div>
+                <label for="quotes">Quotes:</label>
+                <input type="checkbox" id="quotes" name="quotes">
+            </div>
+
+            <div>
+                <label for="questions">Questions (puns):</label>
+                <input type="checkbox" id="questions" name="questions">
+            </div>
+
+            <div>
+                <label for="hintrange">Variance of Clue Types</label>
+                <input type="range" id="hintrange" name="hintrange" min="0" max="100">
+                <output for="hintrange" id="sliderOutput">50</output>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Crossword Type</legend>
+
+            <input type="radio" id="themed" name="type" value="themed">
+            <label for="themed">Themed</label><br>
+
+            <input type="radio" id="themeless" name="type" value="themeless">
+            <label for="themeless">Themeless</label><br>
+
+            <input type="radio" id="sunday" name="type" value="sunday">
+            <label for="sunday">Sunday</label>
+
+            <div>
+                <label for="themeinput">Choose a theme type:</label>
+                <input list="themetype" id="themeinput" name="themetype">
+
+                <datalist id="themetype">
+                    <option value="Starts with..."></option>
+                    <option value="Ends with..."></option>
+                    <option value="Containing..."></option>
+                    <option value="Split up words..."></option>
+                </datalist>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="fun">Fun level:</label>
+            <meter id="fun" min="0" max="100" low="33" high="66" optimum="80" value="90">
+                at 50/100
+            </meter>
+
+            <label for="gen">Generation progress:</label>
+            <progress id="gen" max="100" value="70"></progress>
+
+            <label for="solve">Crossword Solving progress:</label>
+            <progress id="solve" max="100" value="70">70%</progress>
+        </div>
+
+        <div>
+            <button type="button">Do Nothing</button>
+            <input type="button" value="Also Do Nothing">
+            <button type="reset">Clear Form</button>
+            <input type="reset" value="Also Clear Form">
+            <button type="submit">Submit</button>
+            <input type="submit" value="Also Submit">
+        </div>
+
+        <input type="image" src="/assets/cw-logo.png" alt="Submit but Fancy">
+    </form>
+
+    <script>
+        const slider = document.getElementById('hintrange');
+        const output = document.getElementById('sliderOutput');
+
+        output.value = slider.value;
+
+        slider.addEventListener('input', () => {
+            output.value = slider.value;
+        });
+    </script>
+
+</body>
+
+</html>

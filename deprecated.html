@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase of deprecated HTML elements and how they may or may not function.">
+
+    <title>Deprecated</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Deprecated elements</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="structure.html">Structure</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+    </nav>
+
+    <center>
+        CROSSWORD THINGS YOU CAN'T DO!
+    </center>
+    <!-- This centers text on your screen. you should use CSS with text-align or something else instead -->
+
+    <strike>
+        Some useful tips
+    </strike>
+    <!-- Puts a strikethrough on text. Use <s> instead -->
+
+    Some terrible tips for constructing
+    <acronym title="Reall Good Crosswords">
+        RGCs
+    </acronym>
+    <!-- use abbr instead -->
+
+    <p>
+        <font color="blue" size="3" face="Garamond">
+            Unfortunately, you cannot change the font in a crossword. However, that might make for an interesting theme.
+            Someone get on that!
+        </font>
+        <!-- Use CSS styling instead -->
+    </p>
+
+    <p>
+        <big>
+            Likewise, you can't change the size of the font in a crossword either.
+        </big>
+        <!-- Simply use CSS font sizes instead -->
+
+        <small>
+            I suppose if you consider a rebus (multiple letters in one square) you could call that making the text smaller.
+        </small>
+    </p>
+
+    <p>
+        If you wrote some code that was wrong, you might see something like:
+    </p>
+    <tt>
+        Error: hey this code is so wrong
+    </tt>
+    <!-- Makes monospaced text--use <code> instead -->
+    <p>
+        from your terminal.
+    </p>
+
+    <bgsound src="/assets/cars-sound.wav" loop="infinite"></bgsound>
+    <!-- Would play background music, but only worked for Internet Explorer. Use <audio> instead -->
+    <p>
+        do you hear any sounds playing? If you're not in explorer probably not
+    </p>
+
+    <blink>
+        This text is supposed to be blinking. However, it's not. That's because it doesn't work. Just like how you
+        can't make text blink in a crossword.
+    </blink>
+    <!-- Would make text blink. This can achieved today with CSS animations -->
+
+    <marquee>
+        THIS TEXT IS MOVING THOUGH!! YIPPEE!! I LOVE MOVING TEXT!!!
+    </marquee>
+    <!-- Again, can be achieved with CSS animations -->
+
+</body>
+
+</html>
